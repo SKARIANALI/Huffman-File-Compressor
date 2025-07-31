@@ -38,3 +38,23 @@ Clone the repository and compile the source code using the following command:
 
 ```bash
 gcc main.c -o huffman -mconsole
+
+
+
+Create a test file named input.txt with some repetitive content.
+
+Compress the file:
+
+```Bash
+
+./huffman c input.txt compressed.huf
+This will create a new, smaller file named compressed.huf.
+
+Decompress the file:
+
+```Bash
+
+./huffman d compressed.huf decompressed.txt
+This restores the original content into a new file named decompressed.txt.
+
+Verify the result: The decompressed.txt file will be identical to the original input.txt.
